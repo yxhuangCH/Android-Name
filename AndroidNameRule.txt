@@ -1,0 +1,46 @@
+	1. Java  类文件命名规范：
+	. Activity 命名规范： 以 Activity 作为后缀，比如 PersonActivity;
+	. Adapter 命名规范： 以 Adapter 作为后缀，比如 PersonAdapter;
+	. 数据实体命名规范： 大多以 Bean 作为后缀，比如 PersonBean, User 是全局变量，不算实体，不受此约束；
+	
+	2. 资源文件命名规范：
+		a. 页面布局文件 
+		Activity 的以 activity_ 开始， 例如 PersonActivity 的布局文件是 activity_person.xml ;
+		Fragment 的以 fragment_ 开始， 例如 PersonFragment 的布局文件是 fragment_person.xml;
+		
+	b.  ListView 中的 item 布局文件， 以 item_ 开始， 例如 item_person.xml ;
+
+	c. Dialog 布局文件， 以 dialog_ 开始，例如 dialog_person.xml;
+
+	3. Drawable 目录下文件命名规范
+	a. 对于只在一个页面使用的资料，以该页面的名称作为前缀，文件类型作为后缀。 例如关闭账号的点击效果 account_close_selector.xml
+	b. 对于只在一个模块下多个页面使用的资源，以该模块名作为前缀；
+	c. 对于在各个模块、各个页面都有可能使用的资源，比如上导航、下导航，以 common 作为前缀；
+	
+	4. Java 类中控件对象的命名规范
+	LayoutView	lv
+	RelativeView	rv
+	TextView	tv
+	Button		btn
+	ImageButton	img
+	ImageView	iv
+	CheckView	cv
+	RadioButton	rb
+	DatePicker	dp
+	EditText	et
+	TimePickper	tp
+	ToggleButton 	tb
+	ProgressBar	pb
+	WebView		webview
+	LiveView	lv
+	
+	5. Layout 中控件的对象的命名规范
+	Layout 中的控件的命名和 Activity 中的控件命名一样，例如
+	Button btn_login = (Button) findViewById(R.id.btn_login);
+	
+	6. String.xml 文件中命名规范
+	一般是以所在的 Activity 或者 Fragment + 控件名+ 类型名，例如 loginActivity_btn_login_text
+	
+	7. 常量命名
+	大写字母， 以下划线隔开， 例如 private static final String PERSON_CONTANCT = "person_contanct";
+	
